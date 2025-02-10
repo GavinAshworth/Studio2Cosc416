@@ -14,10 +14,8 @@ public class BallController : MonoBehaviour
     {
         ballRB = GetComponent<Rigidbody>();
         inputManager.OnSpacePressed.AddListener(LaunchBall);
-
-        transform.parent = ballAnchor;
-        transform.localPosition = Vector3.zero;
-        ballRB.isKinematic = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        ResetBall();
     }
 
     private void LaunchBall(){
@@ -29,6 +27,14 @@ public class BallController : MonoBehaviour
         ballRB.isKinematic = false;
         ballRB.AddForce(launchIndicator.forward * force, ForceMode.Impulse);
         launchIndicator.gameObject.SetActive(false);
+    }
+
+    public void ResetBall(){
+        transform.parent = ballAnchor;
+        transform.localPosition = Vector3.zero;
+        ballRB.isKinematic = true;
+        isBallLaunched = false;
+        launchIndicator.gameObject.SetActive(true);
     }
 
 }
