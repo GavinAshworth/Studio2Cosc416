@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 387066989}
   m_Layer: 7
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 1266374659}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1624,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 236087294127388778, guid: da98411471d5b5a4489de5497d1b8ce4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.49
+      value: 5.17
       objectReference: {fileID: 0}
     - target: {fileID: 236087294127388778, guid: da98411471d5b5a4489de5497d1b8ce4, type: 3}
       propertyPath: m_LocalPosition.y
